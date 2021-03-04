@@ -3,22 +3,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routing.module';
 import { CoreModule } from './core/core.module';
+import { ErrorsModule } from './errors/errors.module';
 import { MainPageModule } from './main-page/main-page.module';
-import { SignInComponent } from './signin/signin.component';
-import { SignUpComponent } from './signup/signup.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SignInComponent,
-    SignUpComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     CoreModule,
-    MainPageModule
+    MainPageModule,
+    AppRoutingModule,
+    ErrorsModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
