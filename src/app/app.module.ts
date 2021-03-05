@@ -8,6 +8,7 @@ import { CoreModule } from './core/core.module';
 import { ErrorsModule } from './errors/errors.module';
 import { MainPageModule } from './main-page/main-page.module';
 import { HomeModule } from './home/home.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeModule } from './home/home.module';
     MainPageModule,
     AppRoutingModule,
     ErrorsModule,
-    HomeModule
+    HomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

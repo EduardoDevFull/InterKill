@@ -8,6 +8,10 @@ import { SignUpComponent } from './home/signup/signup.component';
 
 const routes: Routes = [
   {
+    path: 'user/:userName',
+    component: MainPageComponent
+  },
+  {
     path: 'signup',
     component: SignUpComponent
   },
