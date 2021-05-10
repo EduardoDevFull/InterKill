@@ -5,6 +5,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 
 import { SignInComponent } from './home/signin/signin.component';
 import { SignUpComponent } from './home/signup/signup.component';
+import { PlansPageComponent } from './secondary-pages/plans-page/plans-page.component';
 
 const routes: Routes = [
   {
@@ -20,13 +21,17 @@ const routes: Routes = [
     component: SignInComponent
   },
   {
+    path: 'plans',
+    component: PlansPageComponent
+  },
+  {
     path: '',
     component: MainPageComponent
   },
   {
     path: '**',
     component: NotFoundComponent
-  }
+  },
 ];
 
 @NgModule({

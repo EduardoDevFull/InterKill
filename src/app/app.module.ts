@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.routing.module';
@@ -8,7 +9,7 @@ import { CoreModule } from './core/core.module';
 import { ErrorsModule } from './errors/errors.module';
 import { MainPageModule } from './main-page/main-page.module';
 import { HomeModule } from './home/home.module';
-import { HttpClientModule } from '@angular/common/http';
+import { SecondaryPagesModule } from './secondary-pages/secondary-pages.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ErrorsModule,
     HomeModule,
-    HttpClientModule
+    HttpClientModule,
+    SecondaryPagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
